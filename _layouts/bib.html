@@ -31,19 +31,27 @@
           <div class="author">
           {% assign author_array_size = entry.author_array | size %}
 
-          {%- if site.max_author_limit and author_array_size > site.max_author_limit %}
+          <!--{%- if site.max_author_limit and author_array_size > site.max_author_limit %}
             {% assign author_array_limit = site.max_author_limit %}
           {% else %}
             {% assign author_array_limit = author_array_size %}
-          {% endif %}
+          {% endif %}-->
+
+          {% assign author_array_limit = author_array_size %}
 
           {%- for author in entry.author_array limit: author_array_limit -%}
             {%- assign author_is_self = false -%}
-            {%- if author.last contains site.scholar.last_name %}
+            
+            <!--{%- if author.last contains site.scholar.last_name %}
               {%- if site.scholar.first_name contains author.first -%}
                 {%- assign author_is_self = true -%}
               {%- endif -%}
+            {%- endif -%}-->
+
+            {%- if author.first contains "Cathy" and author.last contains "Jiao" %}
+              {%- assign author_is_self = true -%}
             {%- endif -%}
+
             {%- assign coauthor_url = nil -%}
             {%- if site.data.coauthors[author.last] -%}
               {%- for coauthor in site.data.coauthors[author.last] -%}
