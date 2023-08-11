@@ -21,4 +21,7 @@ Hello! I am an incoming PhD student at the [Language Technologies Institute](htt
 
 I recently finished my masters degree at CMU LTI, where I was advised by [Maxine Eskenazi](https://www.cs.cmu.edu/~max/index.html) and [Aaron Steinfeld](https://www.ri.cmu.edu/ri-faculty/aaron-steinfeld/). During my masters, I investigated generalization abilities in large language models -- mostly in the realm of dialogue tasks [[EMNLP '22](https://arxiv.org/abs/2205.12673), [CVPR '22 (Embodied AI)](https://embodied-ai.org/papers/2022/20.pdf), [IWSDS '23](https://arxiv.org/abs/2301.12004)].
 
-Before grad school, I spent time in industry working on machine learning and deep learning applications for natural language processing. Prior to that, I graduated with distinction from the [University of British Columbia](https://www.ubc.ca/) with a B.S. in [Computer Science](https://www.cs.ubc.ca/) and [Mathematics](https://www.ubc.ca/).
+Before grad school, I spent time in industry working on machine learning and deep learning applications for natural language processing. Prior to that, I graduated with distinction from the [University of British Columbia](https://www.ubc.ca/) with a B.S. in [Computer 
+Science](https://www.cs.ubc.ca/) and [Mathematics](https://www.ubc.ca/).
+
+[\[CV\]]({% link /assets/pdf/cv_cathy_jiao_2023.pdf %}) [\[Semantic Scholar\]](https://www.semanticscholar.org/author/Cathy-Jiao/2064549240) [\[Google Scholar\]](https://scholar.google.com/citations?user=fd1et9QAAAAJ&hl=en&oi=ao)
