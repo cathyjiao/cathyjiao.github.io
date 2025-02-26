@@ -1,7 +1,35 @@
 ---
 ---
 
-@misc{TNLG,
+@misc{zhang2025fairsharedatapricinglarge,
+      title={Fairshare Data Pricing for Large Language Models}, 
+      author={Luyang Zhang* and Cathy Jiao* and Beibei Li and Chenyan Xiong},
+      year={Preprint. 2025},
+      selected={true},
+      pdf={https://arxiv.org/abs/2502.00198}, 
+      abstract={Training data is a pivotal resource for building large language models (LLMs), but unfair pricing in data markets poses a serious challenge for both data buyers (e.g., LLM builders) and sellers (e.g., human annotators), which discourages market participation, reducing data quantity and quality. In this paper, we propose a fairshare pricing framework that sets training data prices using data valuation methods to quantify their contribution to LLMs. In our framework, buyers make purchasing decisions using data valuation and sellers set prices to maximize their profits based on the anticipated buyer purchases. We theoretically show that pricing derived from our framework is tightly linked to data valuation and buyers' budget, optimal for both buyers and sellers. Through market simulations using current LLMs and datasets (math problems, medical diagnosis, and physical reasoning), we show that our framework is fairshare for buyers by ensuring their purchased data is reflective of model training value, leading to higher LLM task performances per-dollar spent on data, and fairshare for sellers by ensuring they sell their data at optimal prices. Our framework lays the foundation for future research on equitable and sustainable data markets for large-scale AI.}
+}
+
+@misc{jiao2025feasibilityincontextprobingdata,
+      title={On the Feasibility of In-Context Probing for Data Attribution}, 
+      author={Cathy Jiao and Gary Gao and Aditi Raghunathan and Chenyan Xiong},
+      year={NAACL 2025},
+      selected={true},
+      pdf={https://arxiv.org/abs/2407.12259}, 
+      code={https://github.com/cxcscmu/InContextDataAttribution},
+      abstract={Data attribution methods are used to measure the contribution of training data towards model outputs, and have several important applications in areas such as dataset curation and model interpretability. However, many standard data attribution methods, such as influence functions, utilize model gradients and are computationally expensive. In our paper, we show in-context probing (ICP) -- prompting a LLM -- can serve as a fast proxy for gradient-based data attribution for data selection under conditions contingent on data similarity. We study this connection empirically on standard NLP tasks, and show that ICP and gradient-based data attribution are well-correlated in identifying influential training data for tasks that share similar task type and content as the training data. Additionally, fine-tuning models on influential data selected by both methods achieves comparable downstream performance, further emphasizing their similarities. We also examine the connection between ICP and gradient-based data attribution using synthetic data on linear regression tasks. Our synthetic data experiments show similar results with those from NLP tasks, suggesting that this connection can be isolated in simpler settings, which offers a pathway to bridging their differences.}
+}
+
+@misc{jiao2024examining,
+  title={Examining Prosody in Spoken Navigation Instructions for People with Disabilities},
+  author={Jiao, Cathy and Steinfeld, Aaron and Eskenazi, Maxine},
+  selected={true},
+  pdf={https://aclanthology.org/2024.hcinlp-1.1/},
+  year={NAACL 2024, Workshop on Bridging HCI and NLP},
+  abstract={The introduction of conversational systems have made synthesized speech technologies common tools for daily activities. However, not all synthetic speech systems are designed with the needs of people with disabilities in mind. This paper describes a study in which 198 people – 80 participants with self-reported disabilities and 118 participants without – were recruited to listen to navigation instructions from a spoken dialogue system with different prosodic features. Results showed that slowing down speech rate aids in participants’ number recall, but not in noun recall. From our results, we provide suggestions for developers for building accessible synthetic speech systems.}
+}
+
+@misc{dialogeval,
   author = {Huynh, Jessica and Jiao, Cathy and Gupta, Prakhar and Mehri, Shikib and Bajaj,Payal and Chaudhary, Vishrav and Eskenazi, Maxine },
   title = {Understanding the Effectiveness of Very Large Language Models on Dialog Evaluation},
   year = {IWSDS 2023},
@@ -10,7 +38,7 @@
   abstract={Language models have steadily increased in size over the past few years. They achieve a high level of performance on various natural language processing (NLP) tasks such as question answering and summarization. Large language models (LLMs) have been used for generation and can now output human-like text. Due to this, there are other downstream tasks in the realm of dialog that can now harness the LLMs' language understanding capabilities. Dialog evaluation is one task that this paper will explore. It concentrates on prompting with LLMs: BLOOM, OPT, GPT-3, Flan-T5, InstructDial and TNLGv2. The paper shows that the choice of datasets used for training a model contributes to how well it performs on a task as well as on how the prompt should be structured. Specifically, the more diverse and relevant the group of datasets that a model is trained on, the better dialog evaluation performs. This paper also investigates how the number of examples in the prompt and the type of example selection used affect the model's performance.}
 }
 
-@misc{https://doi.org/10.48550/arxiv.2205.12673,
+@misc{instructdial,
   doi = {10.48550/ARXIV.2205.12673},
   url = {https://arxiv.org/abs/2205.12673},
   author = {Gupta, Prakhar and Jiao, Cathy and Yeh, Yi-Ting and Mehri, Shikib and Eskenazi, Maxine and Bigham, Jeffrey P.},
@@ -34,7 +62,7 @@
   abstract={Quantitative reasoning is an important aspect of question answering, especially when numeric and verbal cues interact to indicate sophisticated, multi-step programs. In this paper, we demonstrate how modeling the compositional nature of quantitative text can enhance the performance and robustness of QA models, allowing them to capture arithmetic logic that is expressed verbally. Borrowing from the literature on semantic parsing, we propose a method that encourages the QA models to adjust their attention patterns and capture input/output alignments that are meaningful to the reasoning task. We show how this strategy improves program accuracy and renders the models more robust against overfitting as the number of reasoning steps grows. Our approach is designed as a standalone module which can be prepended to many existing models and trained in an end-to-end fashion without the need for additional supervisory signal. As part of this exercise, we also create a unified dataset building on four previously released numerical QA datasets over tabular data.}
 }
 
-@misc{https://doi.org/10.48550/arxiv.2208.10918,
+@misc{dialport,
   author = {Huynh*, Jessica and Mehri*, Shikib and Jiao*, Cathy and Eskenazi, Maxine},
   title = {The DialPort tools},
   year = {SIGDIAL 2022},
@@ -43,22 +71,11 @@
   abstract={The DialPort project (http://dialport.org/), funded by the National Science Foundation (NSF), covers a group of tools and services that aim at fulfilling the needs of the dialog research community. Over the course of six years, several offerings have been created, including the DialPort Portal and DialCrowd. This paper describes these contributions, which will be demoed at SIGDIAL, including implementation, prior studies, corresponding discoveries, and the locations at which the tools will remain freely available to the community going forward.}
 }
 
-
-
-@article{byuntu,
+@article{etupclip,
   title={ET tu, CLIP? Addressing Common Object Errors for Unseen Environments},
   author={Byun*, Ye Won and Jiao*, Cathy and Noroozizadeh*, Shahriar and Sun*, Jimin and Vitiello*, Rosa},
-  year = {CVPR, Embodied AI Workshop, 2022},
+  year = {CVPR 2022, Embodied AI Workshop},
   pdf={https://embodied-ai.org/papers/2022/20.pdf},
   selected={true},
   abstract={We introduce a simple method that employs pre-trained CLIP encoders to enhance model generalization in the ALFRED task. In contrast to previous literature where CLIP replaces the visual encoder, we suggest using CLIP as an additional module through an auxiliary object detection objective. We validate our method on the recently proposed Episodic Transformer architecture and demonstrate that incorporating CLIP improves task performance on the unseen validation set. Additionally, our analysis results support that CLIP especially helps with leveraging object descriptions, detecting small objects, and interpreting rare words.}
 }
-
-@misc{name,
- title={Natural language text conversion and method therefor},
- author={Donaldson, Roger and Jiao, Cathy},
- year={U.S. Patent 11275906, 2022},
- patent={true},
- pdf={https://patents.google.com/patent/US20210019374A1},
- abstract={Multiple natural language training text strings are obtained. For example, text portions may be randomly selected and converted into natural language text based on one or more randomly selected rules. A formatted training text string is generated for each natural language training text string, for example using a context-free grammar parser. The formatted training text strings are inputted to a machine learning model. For each formatted training text string, using the machine learning model, a natural language text string is generated. The natural language text string is associated with one of the natural language training text strings. One or more parameters of the machine learning model are adjusted based on one or more differences between at least one of the natural language text strings and its associated natural language training text string.}
- }
