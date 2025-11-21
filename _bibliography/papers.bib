@@ -1,115 +1,70 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@article{jiao2025datelmbenchmarkingdataattribution,
+  abbr={NeurIPS},
+  title={DATE-LM: Benchmarking Data Attribution Evaluation for Large Language Models}, 
+  author={Cathy Jiao* and Yijun Pan* and Emily Xiao* and Daisy Sheng and Niket Jain and Hanzhang Zhao and Ishita Dasgupta and Jiaqi W. Ma and Chenyan Xiong},
+  year={2025},
   selected={true},
-  inspirehep_id = {3255}
+  code={https://github.com/DataAttributionEval/DATE-LM},
+  pdf={https://arxiv.org/abs/2507.09424}, 
+  abstract={Data attribution methods quantify the influence of training data on model outputs and are becoming increasingly relevant for a wide range of LLM research and applications, including dataset curation, model interpretability, data valuation. However, there remain critical gaps in systematic LLM-centric evaluation of data attribution methods. To this end, we introduce DATE-LM (Data Attribution Evaluation in Language Models), a unified benchmark for evaluating data attribution methods through real-world LLM applications. DATE-LM measures attribution quality through three key tasks -- training data selection, toxicity/bias filtering, and factual attribution. Our benchmark is designed for ease of use, enabling researchers to configure and run large-scale evaluations across diverse tasks and LLM architectures. Furthermore, we use DATE-LM to conduct a large-scale evaluation of existing data attribution methods. Our findings show that no single method dominates across all tasks, data attribution methods have trade-offs with simpler baselines, and method performance is sensitive to task-specific evaluation design. Finally, we release a public leaderboard for quick comparison of methods and to facilitate community engagement. We hope DATE-LM serves as a foundation for future data attribution research in LLMs.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@misc{zhang2025fairsharedatapricinglarge,
+      title={Fairshare Data Pricing via Data Valuation for Large Language Models}, 
+      author={Luyang Zhang* and Cathy Jiao* and Beibei Li and Chenyan Xiong},
+      abbr={NeurIPS},
+      year={2025},
+      selected={true},
+      pdf={https://arxiv.org/abs/2502.00198}, 
+      abstract={Training data is a pivotal resource for building large language models (LLMs), but unfair pricing in data markets poses a serious challenge for both data buyers (e.g., LLM builders) and sellers (e.g., human annotators), which discourages market participation, reducing data quantity and quality. In this paper, we propose a fairshare pricing framework that sets training data prices using data valuation methods to quantify their contribution to LLMs. In our framework, buyers make purchasing decisions using data valuation and sellers set prices to maximize their profits based on the anticipated buyer purchases. We theoretically show that pricing derived from our framework is tightly linked to data valuation and buyers' budget, optimal for both buyers and sellers. Through market simulations using current LLMs and datasets (math problems, medical diagnosis, and physical reasoning), we show that our framework is fairshare for buyers by ensuring their purchased data is reflective of model training value, leading to higher LLM task performances per-dollar spent on data, and fairshare for sellers by ensuring they sell their data at optimal prices. Our framework lays the foundation for future research on equitable and sustainable data markets for large-scale AI.}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@misc{jiao2025feasibilityincontextprobingdata,
+      title={On the Feasibility of In-Context Probing for Data Attribution}, 
+      author={Cathy Jiao and Gary Gao and Aditi Raghunathan and Chenyan Xiong},
+      abbr={NAACL},
+      year={2025},
+      selected={true},
+      pdf={https://arxiv.org/abs/2407.12259}, 
+      code={https://github.com/cxcscmu/InContextDataAttribution},
+      abstract={Data attribution methods are used to measure the contribution of training data towards model outputs, and have several important applications in areas such as dataset curation and model interpretability. However, many standard data attribution methods, such as influence functions, utilize model gradients and are computationally expensive. In our paper, we show in-context probing (ICP) -- prompting a LLM -- can serve as a fast proxy for gradient-based data attribution for data selection under conditions contingent on data similarity. We study this connection empirically on standard NLP tasks, and show that ICP and gradient-based data attribution are well-correlated in identifying influential training data for tasks that share similar task type and content as the training data. Additionally, fine-tuning models on influential data selected by both methods achieves comparable downstream performance, further emphasizing their similarities. We also examine the connection between ICP and gradient-based data attribution using synthetic data on linear regression tasks. Our synthetic data experiments show similar results with those from NLP tasks, suggesting that this connection can be isolated in simpler settings, which offers a pathway to bridging their differences.}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@misc{dialogeval,
+  author = {Huynh, Jessica and Jiao, Cathy and Gupta, Prakhar and Mehri, Shikib and Bajaj,Payal and Chaudhary, Vishrav and Eskenazi, Maxine },
+  title = {Understanding the Effectiveness of Very Large Language Models on Dialog Evaluation},
+  abbr = {IWSDS},
+  year={2023},
+  pdf={https://arxiv.org/abs/2301.12004},
+  selected={true},
+  abstract={Language models have steadily increased in size over the past few years. They achieve a high level of performance on various natural language processing (NLP) tasks such as question answering and summarization. Large language models (LLMs) have been used for generation and can now output human-like text. Due to this, there are other downstream tasks in the realm of dialog that can now harness the LLMs' language understanding capabilities. Dialog evaluation is one task that this paper will explore. It concentrates on prompting with LLMs: BLOOM, OPT, GPT-3, Flan-T5, InstructDial and TNLGv2. The paper shows that the choice of datasets used for training a model contributes to how well it performs on a task as well as on how the prompt should be structured. Specifically, the more diverse and relevant the group of datasets that a model is trained on, the better dialog evaluation performs. This paper also investigates how the number of examples in the prompt and the type of example selection used affect the model's performance.}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@misc{instructdial,
+  doi = {10.48550/ARXIV.2205.12673},
+  url = {https://arxiv.org/abs/2205.12673},
+  author = {Gupta, Prakhar and Jiao, Cathy and Yeh, Yi-Ting and Mehri, Shikib and Eskenazi, Maxine and Bigham, Jeffrey P.},
+  keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Improving Zero and Few-shot Generalization in Dialogue through Instruction Tuning},
+  publisher = {arXiv},
+  abbr = {EMNLP},
+  year={2022},
+  copyright = {Creative Commons Attribution 4.0 International},
+  code = {https://github.com/prakharguptaz/Instructdial},
+  pdf={https://arxiv.org/abs/2205.12673},
+  selected={true},
+  abstract={Instruction tuning is an emergent paradigm in NLP wherein natural language instructions are leveraged with language models to induce zero-shot performance on unseen tasks. Instructions have been shown to enable good performance on unseen tasks and datasets in both large and small language models. Dialogue is an especially interesting area to explore instruction tuning because dialogue systems perform multiple kinds of tasks related to language (e.g., natural language understanding and generation, domain-specific interaction), yet instruction tuning has not been systematically explored for dialogue-related tasks. We introduce InstructDial, an instruction tuning framework for dialogue, which consists of a repository of 48 diverse dialogue tasks in a unified text-to-text format created from 59 openly available dialogue datasets. Next, we explore cross-task generalization ability on models tuned on InstructDial across diverse dialogue tasks. Our analysis reveals that InstructDial enables good zero-shot performance on unseen datasets and tasks such as dialogue evaluation and intent detection, and even better performance in a few-shot setting. To ensure that models adhere to instructions, we introduce novel meta-tasks. We establish benchmark zero-shot and few-shot performance of models trained using the proposed framework on multiple dialogue tasks.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@misc{CompAQT,
+  author = {Nourbakhsh, Armineh and Jiao, Cathy and Shah, Sameena and Rosé, Carolyn},
+  title = {Improving compositional generalization for multi-step quantitative reasoning in question answering},
+  abbr = {EMNLP},
+  year={2022},
+  pdf={https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.125},
+  selected={false},
+  abstract={Quantitative reasoning is an important aspect of question answering, especially when numeric and verbal cues interact to indicate sophisticated, multi-step programs. In this paper, we demonstrate how modeling the compositional nature of quantitative text can enhance the performance and robustness of QA models, allowing them to capture arithmetic logic that is expressed verbally. Borrowing from the literature on semantic parsing, we propose a method that encourages the QA models to adjust their attention patterns and capture input/output alignments that are meaningful to the reasoning task. We show how this strategy improves program accuracy and renders the models more robust against overfitting as the number of reasoning steps grows. Our approach is designed as a standalone module which can be prepended to many existing models and trained in an end-to-end fashion without the need for additional supervisory signal. As part of this exercise, we also create a unified dataset building on four previously released numerical QA datasets over tabular data.}
 }

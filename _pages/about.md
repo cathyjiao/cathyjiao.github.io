@@ -2,16 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    Email: cljiao@cs.cmu.edu
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -19,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
@@ -27,8 +25,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD student at the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) in the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cs.cmu.edu/), advised by [Chenyan Xiong](https://www.cs.cmu.edu/~cx/). Recently, I spent a wonderful summer in NYC at [Spotify Research](https://research.atspotify.com/), hosted by [Paul Bennett](https://scholar.google.com/citations?user=AIncPrIAAAAJ&hl=en).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on **data-centric AI**. A central thread of my work is data attribution: **quantifying how data influences model training in foundation models**, which I explore through efficient approximations and practical applications such as dataset curation and data valuation/pricing. More broadly, I aim to develop **frameworks that make data usage more transparent, reliable, and impactful** for both research and deployment of foundation models.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously, I finished my MS at CMU LTI where I worked on dialgue systems, advised by [Maxine Eskenazi](https://www.cs.cmu.edu/~max/index.html) and [Aaron Steinfeld](https://www.ri.cmu.edu/ri-faculty/aaron-steinfeld/). Before grad school, I spent time in industry working on machine learning and deep learning applications for natural language processing. Prior to that, I graduated with distinction from the [University of British Columbia](https://www.ubc.ca/) with a B.S. in CS & Math.
+
+In my spare time, I enjoy [biking](https://bikepgh.org/) around Pittsburgh and cooking. If you work on similar topics or want to chat, feel free to reach out!
+
+<!-- [\[Google Scholar\]](https://scholar.google.com/citations?user=fd1et9QAAAAJ&hl=en&oi=ao)-->
+<!-- [\[Semantic Scholar\]](https://www.semanticscholar.org/author/Cathy-Jiao/2064549240)  -->
+<!-- [\[CV\]](assets/pdf/cv_cathy_jiao_2025.pdf) -->
