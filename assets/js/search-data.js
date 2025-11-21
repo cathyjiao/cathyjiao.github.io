@@ -418,16 +418,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-tada-our-work-on-icp-for-data-attribution-was-accepted-to-naacl-2025-we-showed-that-simple-probing-of-llms-may-serve-as-a-practical-proxy-for-gradient-based-data-attribution-enabling-efficient-identification-of-influential-training-samples-check-out-our-page-facing-up-paper-and-computer-code",
+          title: ':tada: Our work on ICP for Data Attribution was accepted to NAACL 2025....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-tada-our-work-on-fairshare-data-pricing-was-accepted-to-neurips-2025-introducing-a-data-influence-based-framework-for-fair-pricing-of-llm-training-datasets-check-out-our-page-facing-up-paper",
+          title: ':tada: Our work on Fairshare Data Pricing was accepted to NeurIPS 2025, introducing...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-tada-date-lm-was-accepted-to-neurips-2025-we-introduce-a-rigorous-applications-driven-benchmark-for-large-scale-evaluation-of-data-attribution-methods-in-llms-check-out-our-page-facing-up-paper-computer-code-and-trophy-leaderboard",
+          title: ':tada: DATE-LM was accepted to NeurIPS 2025. We introduce a rigorous, applications-driven benchmark...',
+          description: "",
+          section: "News",},{id: "news-round-pushpin-i-will-be-attending-neurips-in-san-diego-looking-forward-presenting-our-latest-works",
+          title: ':round_pushpin: I will be attending NeurIPS in San Diego — looking forward presenting...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
