@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student at the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) in the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cs.cmu.edu/), advised by [Chenyan Xiong](https://www.cs.cmu.edu/~cx/). Recently, I spent a wonderful summer in NYC at [Spotify Research](https://research.atspotify.com/), hosted by [Paul Bennett](https://scholar.google.com/citations?user=AIncPrIAAAAJ&hl=en).
+I am a PhD student at the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) in the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cs.cmu.edu/), advised by [Chenyan Xiong](https://www.cs.cmu.edu/~cx/). 
 
 My research focuses on **data-centric AI**. A central thread of my work is data attribution: **quantifying how data influences model training in foundation models**, which I explore through efficient approximations and practical applications such as dataset curation and data valuation/pricing. More broadly, I aim to develop **frameworks that make data usage more transparent, reliable, and impactful** for both research and deployment of foundation models.
 
