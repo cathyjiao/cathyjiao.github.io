@@ -1,52 +1,28 @@
 ---
 ---
 <div class="row">
-  {% if site.enable_publication_thumbnails %}
+  {% if site.enable_publication_thumbnails and entry.preview %}
     <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
-        {% endif %}
-      {% endif %}
-      {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-        {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            avoid_scaling=true
-            alt=entry.preview
-          %}
-        {% endif %}
+      {% if entry.preview contains '://' %}
+        <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+      {% else %}
+        {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=entry_path
+          sizes = "200px"
+          class="preview z-depth-1 rounded"
+          zoomable=true
+          avoid_scaling=true
+          alt=entry.preview
+        %}
       {% endif %}
     </div>
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails and entry.preview %}col-sm-8{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -149,12 +125,17 @@
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
-    {% if entry.type == 'article' %}
+    {% if entry.type == 'article' and entry.journal != blank %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
-    {% elsif proceedings contains entry.type %}
+    {% elsif proceedings contains entry.type and entry.booktitle != blank %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+    {% elsif entry.booktitle != blank %}
+      <!-- Fall back to the venue named in booktitle/abbr for entries with no journal -->
+      {% capture entrytype %}<em>{{ entry.booktitle }}</em>{% endcapture %}
+    {% elsif entry.abbr != blank %}
+      {% capture entrytype %}<em>{{ site.data.venues[entry.abbr].full | default: entry.abbr }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}

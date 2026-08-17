@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-11-01 15:59:00-0400
+date: 2025-08-15 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-:round_pushpin: I will be attending NeurIPS in San Diego — looking forward presenting our latest works!
+Gave a talk at Spotify on *ICP for Data Attribution* [[slides]](https://docs.google.com/presentation/d/1b0WZwEySgCvsTW4kxRDP1jbNcsAYoB5oySl7pW37IDo/edit?usp=sharing).

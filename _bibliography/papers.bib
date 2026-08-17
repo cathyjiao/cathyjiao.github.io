@@ -1,8 +1,26 @@
 ---
 ---
 
+
+@inproceedings{jiao2026efficientdatasetselection,
+  title={Efficient Dataset Selection for Continual Adaptation of Generative Recommenders},
+  author={Cathy Jiao and Juan Elenter and Praveen Ravichandran and Bernd Huber and Joseph Cauteruccio and Todd Wasson and Timothy Heath and Chenyan Xiong and Mounia Lalmas and Paul Bennett},
+  booktitle={ICLR CAO Workshop},
+  abbr={ICLR WS},
+  year={2026},
+  workshop={true},
+  selected={true},
+  award={Selected for an oral presentation at the ICLR 2026 CAO Workshop (6 of 76 papers, top 8%).},
+  award_name={Oral Presentation (top 8%)},
+  pdf={https://arxiv.org/abs/2604.07739},
+  slides={https://docs.google.com/presentation/d/1y2XDbFscg0vy0jKavEmlFTGPibpZEBamF8A_LjRK6Ks/edit?usp=sharing},
+  abstract={Recommendation systems must continuously adapt to evolving user behavior, yet the volume of data generated in large-scale streaming environments makes frequent full retraining impractical. This work investigates how targeted data selection can mitigate performance degradation caused by temporal distributional drift while maintaining scalability. We evaluate a range of representation choices and sampling strategies for curating small but informative subsets of user interaction data. Our results demonstrate that gradient-based representations, coupled with distribution-matching, improve downstream model performance, achieving training efficiency gains while preserving robustness to drift. These findings highlight data curation as a practical mechanism for scalable monitoring and adaptive model updates in production-scale recommendation systems.}
+}
+
+
 @article{jiao2025datelmbenchmarkingdataattribution,
   abbr={NeurIPS},
+  booktitle={NeurIPS},
   title={DATE-LM: Benchmarking Data Attribution Evaluation for Large Language Models}, 
   author={Cathy Jiao* and Yijun Pan* and Emily Xiao* and Daisy Sheng and Niket Jain and Hanzhang Zhao and Ishita Dasgupta and Jiaqi W. Ma and Chenyan Xiong},
   year={2025},
@@ -39,7 +57,7 @@
   abbr = {IWSDS},
   year={2023},
   pdf={https://arxiv.org/abs/2301.12004},
-  selected={true},
+  selected={false},
   abstract={Language models have steadily increased in size over the past few years. They achieve a high level of performance on various natural language processing (NLP) tasks such as question answering and summarization. Large language models (LLMs) have been used for generation and can now output human-like text. Due to this, there are other downstream tasks in the realm of dialog that can now harness the LLMs' language understanding capabilities. Dialog evaluation is one task that this paper will explore. It concentrates on prompting with LLMs: BLOOM, OPT, GPT-3, Flan-T5, InstructDial and TNLGv2. The paper shows that the choice of datasets used for training a model contributes to how well it performs on a task as well as on how the prompt should be structured. Specifically, the more diverse and relevant the group of datasets that a model is trained on, the better dialog evaluation performs. This paper also investigates how the number of examples in the prompt and the type of example selection used affect the model's performance.}
 }
 
