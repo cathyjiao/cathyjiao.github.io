@@ -41,6 +41,13 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Social -->
+    {% if page.social %}
+      <div class="social social-inline">
+        <div class="contact-icons">{% include social.liquid %}</div>
+      </div>
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -55,6 +62,24 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Mentoring -->
+    {% if page.mentoring %}
+      <h2>Mentoring</h2>
+      {{ page.mentoring | markdownify }}
+    {% endif %}
+
+    <!-- Academic service -->
+    {% if page.academic_service %}
+      <h2>Academic Service</h2>
+      {{ page.academic_service | markdownify }}
+    {% endif %}
+
+    <!-- Misc -->
+    {% if page.misc %}
+      <h2>Misc</h2>
+      {{ page.misc | markdownify }}
     {% endif %}
   </article>
 </div>

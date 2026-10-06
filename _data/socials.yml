@@ -15,7 +15,7 @@
 email: cljiao@cs.cmu.edu # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
-github_username: cathyjiao # your GitHub user name
+# github_username: cathyjiao # your GitHub user name
 # gitlab_username: # your GitLab user name
 # hal_id: # your HAL id (https://hal.science/)
 # ieee_id: # your ieeexplore.ieee.org/author/id
@@ -26,7 +26,7 @@ github_username: cathyjiao # your GitHub user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-# linkedin_username: # your LinkedIn user name
+linkedin_username: cathy-jiao # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
@@ -35,10 +35,10 @@ github_username: cathyjiao # your GitHub user name
 # publons_id: # your ID on Publons
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
-rss_icon: true # comment this line to hide the RSS icon
+# rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: fd1et9QAAAAJ # your Google Scholar ID
 # scopus_id: # your profile on Scopus
-semanticscholar_id: 2064549240 # your Semantic Scholar ID
+# semanticscholar_id: 2064549240 # your Semantic Scholar ID
 # spotify_id: # your spotify id
 # stackoverflow_id: # your stackoverflow id
 # strava_userid: # your strava user id
@@ -49,7 +49,7 @@ semanticscholar_id: 2064549240 # your Semantic Scholar ID
 # wikidata_id: # your wikidata id
 # wikipedia_id: # your wikipedia id (Case sensitive)
 # work_url: # work page URL
-# x_username: # your X handle
+x_username: cathy__jiao # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
 # custom_social: # can be any name here other than the ones already defined above

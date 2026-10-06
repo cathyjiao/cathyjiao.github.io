@@ -17,8 +17,4 @@ nav_order: 2
 
 {% bibliography --query @*[workshop!=true] %}
 
-<h1>workshop papers</h1>
-
-{% bibliography --query @*[workshop=true] %}
-
 </div>

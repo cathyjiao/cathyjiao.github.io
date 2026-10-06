@@ -1496,3 +1496,17 @@ figure.cover {
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
 }
+
+// Social icons shown inline under the bio on the about page
+.social.social-inline {
+  text-align: left;
+  margin-bottom: 1rem;
+
+  .contact-icons {
+    font-size: 2rem;
+
+    a {
+      margin-right: 0.5rem;
+    }
+  }
+}

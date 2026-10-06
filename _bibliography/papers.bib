@@ -2,6 +2,17 @@
 ---
 
 
+@misc{jiao2026syntheticdatagrouplevelsignals,
+  title={Effective Synthetic Data Curation Requires Group-Level Signals},
+  author={Cathy Jiao and Chenyan Xiong},
+  abbr={Preprint},
+  booktitle={arXiv preprint},
+  year={2026},
+  selected={true},
+  pdf={https://arxiv.org/abs/2610.00779},
+  abstract={Synthetic data now is essential to LLM training, used to strengthen advanced capabilities such as autonomous and long-horizon task execution. Yet recent work shows that training on it at scale can degrade model generation, making it important to decide what synthetic data is worth training on. While current data curation practices do so with individual-level signals (i.e., estimates of each data sample's training utility in isolation), across pre-training and post-training settings we show that this is insufficient for synthetic data, and that group-level signals (i.e., estimates of utility that account for interactions among data samples) are necessary for effective data curation. First, we show that individual-level signals are blind to how samples jointly affect training: synthetic datasets with different compositions can be indistinguishable under individual-level influence yet differ sharply under group-level influence, and curating by the latter yields better downstream performance, particularly in generative capability. Second, we find that group-level signals matter more as training pipelines become increasingly synthetic: among widely used data curation methods, only those incorporating them improve over baseline, with gains increasing when weights capturing relations among samples are amplified. Finally, we translate these findings into practice -- for model developers under a compute budget, we offer a cheap diagnostic that prioritizes which groups of synthetic data most need group-level estimation, recovering much of the benefit of full group-level scoring at a fraction of the compute cost.}
+}
+
 @inproceedings{jiao2026efficientdatasetselection,
   title={Efficient Dataset Selection for Continual Adaptation of Generative Recommenders},
   author={Cathy Jiao and Juan Elenter and Praveen Ravichandran and Bernd Huber and Joseph Cauteruccio and Todd Wasson and Timothy Heath and Chenyan Xiong and Mounia Lalmas and Paul Bennett},
@@ -9,7 +20,7 @@
   abbr={ICLR WS},
   year={2026},
   workshop={true},
-  selected={true},
+  selected={false},
   award={Selected for an oral presentation at the ICLR 2026 CAO Workshop (6 of 76 papers, top 8%).},
   award_name={Oral Presentation (top 8%)},
   pdf={https://arxiv.org/abs/2604.07739},
@@ -73,7 +84,7 @@
   copyright = {Creative Commons Attribution 4.0 International},
   code = {https://github.com/prakharguptaz/Instructdial},
   pdf={https://arxiv.org/abs/2205.12673},
-  selected={true},
+  selected={false},
   abstract={Instruction tuning is an emergent paradigm in NLP wherein natural language instructions are leveraged with language models to induce zero-shot performance on unseen tasks. Instructions have been shown to enable good performance on unseen tasks and datasets in both large and small language models. Dialogue is an especially interesting area to explore instruction tuning because dialogue systems perform multiple kinds of tasks related to language (e.g., natural language understanding and generation, domain-specific interaction), yet instruction tuning has not been systematically explored for dialogue-related tasks. We introduce InstructDial, an instruction tuning framework for dialogue, which consists of a repository of 48 diverse dialogue tasks in a unified text-to-text format created from 59 openly available dialogue datasets. Next, we explore cross-task generalization ability on models tuned on InstructDial across diverse dialogue tasks. Our analysis reveals that InstructDial enables good zero-shot performance on unseen datasets and tasks such as dialogue evaluation and intent detection, and even better performance in a few-shot setting. To ensure that models adhere to instructions, we introduce novel meta-tasks. We establish benchmark zero-shot and few-shot performance of models trained using the proposed framework on multiple dialogue tasks.}
 }
 
