@@ -489,18 +489,11 @@ ninja.data = [{
           window.open("mailto:%63%6C%6A%69%61%6F@%63%73.%63%6D%75.%65%64%75", "_blank");
         },
       },{
-        id: 'social-github',
-        title: 'GitHub',
+        id: 'social-linkedin',
+        title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/cathyjiao", "_blank");
-        },
-      },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://www.linkedin.com/in/cathy-jiao", "_blank");
         },
       },{
         id: 'social-scholar',
@@ -510,11 +503,11 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=fd1et9QAAAAJ", "_blank");
         },
       },{
-        id: 'social-semanticscholar',
-        title: 'Semantic Scholar',
+        id: 'social-x',
+        title: 'X',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.semanticscholar.org/author/2064549240", "_blank");
+          window.open("https://twitter.com/cathy__jiao", "_blank");
         },
       },{
       id: 'light-theme',
