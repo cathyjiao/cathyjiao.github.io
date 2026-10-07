@@ -1510,3 +1510,28 @@ mjx-container[jax="CHTML"][display="true"] {
     }
   }
 }
+
+// Always-visible scroll bar for the news section (macOS otherwise hides it until hover/scroll)
+.news .table-responsive[data-scrollable] {
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--global-divider-color);
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--global-text-color-light);
+    border-radius: 4px;
+  }
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .news .table-responsive[data-scrollable] {
+    scrollbar-width: thin;
+    scrollbar-color: var(--global-text-color-light) var(--global-divider-color);
+  }
+}
