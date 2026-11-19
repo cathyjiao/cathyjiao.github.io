@@ -49,7 +49,7 @@ latest_posts:
 
 I am a PhD student at the [Language Technologies Institute](https://www.lti.cs.cmu.edu/) in the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cs.cmu.edu/), advised by [Chenyan Xiong](https://www.cs.cmu.edu/~cx/). 
 
-My research focuses on **data-centric AI**, with an emphasis on informing decisions about how training data is used to build frontier models. My work builds **principled, measurable signals of how data shapes model behavior** and uses them to guide data curation decisions. This includes understanding whether such signals can be trusted in real-world settings, making them cheap enough for large-scale data curation, and using them as the basis for broader applications such as data transparency, accountability, and fair attribution for data contributors.
+My research studies how data shapes foundation models. I develop principled, scalable methods for measuring how training data influences model behavior (**data attribution**), and I build frameworks that guide agents to curate data and to learn from and improve on their own decisions (**agentic data curation**). I also apply data attribution to broader settings such as **data transparency, accountability, and fair valuation** for data contributors.
 
 Previously, I finished my MS at CMU LTI where I worked on dialogue systems, advised by [Maxine Eskenazi](https://www.cs.cmu.edu/~max/index.html) and [Aaron Steinfeld](https://www.ri.cmu.edu/ri-faculty/aaron-steinfeld/). Prior to that, I graduated with distinction from the [University of British Columbia](https://www.ubc.ca/) with a B.S. in CS & Math.
 
